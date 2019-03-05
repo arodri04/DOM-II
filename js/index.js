@@ -22,7 +22,7 @@ const head = document.querySelectorAll('h2');
 const par = document.querySelectorAll('p');
 
 input = [];
-pass = [ 2, 3, 4, 1 ];
+pass = [ 2, 3, 4, 1, 's', 'a', 'm' ];
 image[0].addEventListener('click', function(e){
     console.log("click");
     input.push(1);
@@ -93,4 +93,21 @@ function check() {
     return true;
 }
 
-
+whole.addEventListener('keydown', function(e){
+    if(e.key === 's') {
+        console.log('click');
+        input.push('s');
+    }
+});
+whole.addEventListener('keydown', function(e){
+    if(e.key === 'a') {
+        console.log('click');
+        input.push('a');
+    }
+});
+whole.addEventListener('keydown', function(e){
+    if(e.key === 'm') {
+        console.log('click');
+        input.push('m');
+    }
+});
